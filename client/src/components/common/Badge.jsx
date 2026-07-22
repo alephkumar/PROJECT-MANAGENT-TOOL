@@ -9,4 +9,5 @@ export const StatusBadge = ({ status }) => (
   <span className={`badge ${statusColor(status)}`}>{status}</span>
 );
 
-export default { PriorityBadge, StatusBadge };
+const Badge = { PriorityBadge, StatusBadge };
+export default Badge;

@@ -24,4 +24,5 @@ export const reportService = {
   getPerformanceReport: () => api.get('/reports/performance').then((res) => res.data),
 };
 
-export default { userService, dashboardService, notificationService, reportService };
+const services = { userService, dashboardService, notificationService, reportService };
+export default services;
