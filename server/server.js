@@ -67,6 +67,11 @@ app.get('/api/health', (req, res) => {
   res.status(200).json({ success: true, message: 'API is running', timestamp: new Date() });
 });
 
+// ---------- Root Route ----------
+app.get('/', (req, res) => {
+  res.send('<h2>Welcome to the AI Project Management Tool API!</h2><p>Your backend is successfully running on Render.</p>');
+});
+
 // ---------- API Routes ----------
 app.use('/api/auth', authRoutes);
 app.use('/api/projects', projectRoutes);
